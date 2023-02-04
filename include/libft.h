@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mpalombi <mpalombi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/19 15:07:16 by gpecci            #+#    #+#             */
-/*   Updated: 2023/01/26 19:56:26 by mpalombi         ###   ########.fr       */
+/*   Updated: 2023/02/04 14:56:31 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,5 +66,13 @@ void	ft_lstadd_back(t_list **lst, t_list *new);
 t_list	*ft_lstlast(t_list *lst);
 int		ft_lstsize(t_list *lst);
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+
+int		ft_printnbr(int n);
+int		ft_pntlen(uintptr_t num);
+void	ft_put_pnt(uintptr_t num);
+int		ft_printpnt(unsigned long long pnt);
+int		ft_printunsigned(unsigned int	n);
+char	*ft_uitoa(unsigned int n);
+int		ft_nbr_len(unsigned	int nbr);
 
 #endif
